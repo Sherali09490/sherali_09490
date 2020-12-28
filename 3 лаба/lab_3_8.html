@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <html lang="ru"
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Лабораторная работа №3_8</title>
+  <link rel="stylesheet" href="css/style.css">
+  <head>
+
+</head>
+</head>
+<body>
+
+<center>
+<font size="5" color="white" face="Arial">
+    <div>
+        <input id="calc_input" placeholder="Ввод чисел"><br>
+        <input id="calc_result" readonly><br>
+        <button id="calc_submit">=</button>
+    </div>
+</font>
+</center>
+<script>
+calc_submit.onclick = () => {
+    calc_result.value = `=${eval(calc_input.value)}`
+}
+</script>
+</body>
+</html>
